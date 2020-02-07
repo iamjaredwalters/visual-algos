@@ -12,7 +12,7 @@
     "test:coverage": "jest --coverage"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "<rootdir>/jest.setup.js",
+    "setupFilesAfterEnv": ["./jest.setup.js"],
     "testPathIgnorePatterns": [
       "<rootdir>/.next/",
       "<rootdir>/node_modules/"
