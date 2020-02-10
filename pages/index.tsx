@@ -1,7 +1,9 @@
+import React from 'react';
 import { NextPage } from 'next';
+import { Bubble } from '../components/Bubble';
 
-const Home: NextPage<{ userAgent: string }> = ({ userAgent }) => (
-    <h1>Hello world! - user agent: {userAgent}</h1>
+const Home: NextPage<{ userAgent: string }> = () => (
+    <Bubble items={[5,2,1,3,4]} />
 );
 
 Home.getInitialProps = async ({ req }) => {
