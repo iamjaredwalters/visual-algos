@@ -17,7 +17,7 @@ const bubble = (items: Array<number>) => {
         }
 
         if (!changed) {
-            break
+            break;
         }
     }
     return items;
